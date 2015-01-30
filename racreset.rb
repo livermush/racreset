@@ -5,8 +5,18 @@ require 'rubygems'
 require 'net/ssh'
 
 #Declare username and password
-USER = 'doug'
-PASS = 'R0cket$auce'
+#USER = 'doug'
+#PASS = 'R0cket$auce'
+
+#Flush input buffers before reading in data
+STDOUT.flush
+
+# Request username and password
+puts "What username would you like to use?"
+USER = gets.chomp
+
+puts "What password would you like to use?"
+PASS = gets.chomp
 
 INPUTFILE = "testlist"
 
