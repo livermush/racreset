@@ -16,7 +16,7 @@ puts "What username would you like to use?"
 USER = gets.chomp
 
 puts "What password would you like to use?"
-PASS = gets.chomp
+PASS = STDIN.noecho(&:gets).chomp
 
 INPUTFILE = "testlist"
 
