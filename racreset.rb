@@ -18,6 +18,7 @@ USER = gets.chomp
 puts "What password would you like to use?"
 PASS = STDIN.noecho(&:gets).chomp
 
+# set the variable name for the file to be read in
 INPUTFILE = "testlist"
 
 # initialize array input_array
